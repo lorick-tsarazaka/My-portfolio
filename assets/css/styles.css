@@ -422,7 +422,7 @@ footer{
   border-radius: 5px;
   min-height: 45px;
 }
-.tel-form input:focus{
+.tel-form input:focus , .tel-form select:focus{
   outline: none;
 }
 #contact{
