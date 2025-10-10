@@ -475,10 +475,37 @@ footer{
 .fs-md-5 {
   font-size: large; /* taille par défaut */
 }
+#scroll-arrow {
+  position: fixed;
+  bottom: 60px;
+  right: 17rem;
+  background-color: #0e55b1;
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scroll-arrow.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#scroll-arrow:hover {
+  background-color: #003b91;
+}
 
 @media (max-width: 768px) {
   .fs-md-5 {
     font-size: medium; /* taille pour medium et plus */
+  }
+  #scroll-arrow {
+    bottom: 105px;
+    right: 15px;
   }
 }
 
