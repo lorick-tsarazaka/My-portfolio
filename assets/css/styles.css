@@ -31,6 +31,7 @@ body{
 }
 .sub-title{
     font-feature-settings: "ss07";
+
     color: rgba(0, 0, 0, 0.685);
 }
 .color-blue{
@@ -58,11 +59,9 @@ body{
 
 
 section{
-    padding-top: 9vh;
+    padding-top: 80px;
     min-height: 100vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.096);
-    min-width: none;
-    max-width: 85vw;
 }
 
 .offcanvas-start {
@@ -283,7 +282,7 @@ footer{
 }
 
 .left{
-    width: 60%;
+    width: 55%;
 }
 .right{
     width: 30%;
@@ -325,16 +324,16 @@ footer{
   backdrop-filter: blur(5px); /* flou de 6px */
 -webkit-backdrop-filter: blur(5px);
 }
-.modal-header .btn-close {
+.btn-close {
     color: white !important;
     transform: scale(1.5) translateY(-10px); 
     filter: invert(1);
     opacity: 1; 
 }
-.modal-header .btn-close:hover {
+.btn-close:hover {
   transform: scale(1.5) translateY(-10px); 
 }
-.modal-header .btn-close:active ,.modal-header .btn-close:focus {
+.btn-close:active ,.btn-close:focus {
     outline: none;
     box-shadow: none;
     border: none; 
@@ -414,7 +413,6 @@ footer{
 
 
 
-
 /* CONTACT */
 .form-control{
   min-height: 45px !important;
@@ -477,11 +475,10 @@ footer{
 .fs-md-5 {
   font-size: large; /* taille par défaut */
 }
-
 #scroll-arrow {
   position: fixed;
-  bottom: 8vh;
-  right: 10vw;
+  bottom: 60px;
+  right: 15rem;
   background-color: #0e55b1;
   color: white;
   font-size: 24px;
@@ -507,14 +504,10 @@ footer{
     font-size: medium; /* taille pour medium et plus */
   }
   #scroll-arrow {
-    bottom: 11vh;
-    right: 2vw;
+    bottom: 105px;
+    right: 15px;
   }
 }
-
-
-
-
 
 
 
@@ -526,8 +519,7 @@ footer{
     }
 
     section{
-        padding-top: 9vh;
-        max-width: 98vw;
+        padding-top: 85px;
     }
     .nav-item{
         border-bottom: 0px solid rgba(0, 0, 0, 0);
@@ -581,8 +573,8 @@ footer{
     
     
 }
-
-
+    
+    
     
     
 /*       
