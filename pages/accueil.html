@@ -327,42 +327,60 @@
         </div>
       </div>
 
-      <!-- Contact Form -->
-      <div class="col-lg-8">
-        <div class="px-md-4 bg-white">
-          <form action="#contact" method="POST">
-            <div class="d-flex flex-wrap">
-              <div class="col-md-6 col-12 mb-3 me-md-3">
-                <input type="text" id="name" name="name" class="p-2 form-control" placeholder="Name" required>
-              </div>
-              <div class="d-flex align-items-center flex-grow-1 mb-3 tel-form">
-                <div class="col-2">
-                    <select id="country" class="bg-transparent border-0 ps-3" onchange="updatePattern()">
-                    <option value="MG">🇲🇬</option>
-                    <option value="FR">🇫🇷</option>
-                    <option value="US">🇺🇸</option>
-                  </select>
-                </div>
-                <div class="flex-grow-1">
-                  <input type="tel" id="phone" name="phone" class="bg-transparent px-2 border-0 border-start border-1" required>
-                </div>
-              </div>
-            </div>  
-            <div class="mb-3">
-              <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
-            </div>
-            <div class="mb-3">
-              <textarea id="message" name="message" rows="5" class="form-control" placeholder="Message ..." required></textarea>
-            </div>
+<!-- Contact Form -->
+<div class="col-lg-8">
+  <div class="px-md-4 bg-white">
+    <!-- Formulaire Formspree -->
+    <form id="contact-form">
+      <div class="d-flex flex-wrap">
+        <!-- Nom -->
+        <div class="col-md-6 col-12 mb-3 me-md-3">
+          <input type="text" id="name" name="name" class="p-2 form-control" placeholder="Name" required>
+        </div>
 
-            <div class="text-end">
-              <button type="submit" class="w-100 btn btn-primary p-2">Submit Message</button>
+        <!-- Téléphone avec pays -->
+        <div class="d-flex align-items-center flex-grow-1 mb-3 tel-form">
+          <div class="col-2">
+            <select id="country" name="country" class="bg-transparent border-0 ps-3" onchange="updatePattern()">
+              <option value="MG">🇲🇬</option>
+              <option value="FR">🇫🇷</option>
+              <option value="US">🇺🇸</option>
+            </select>
+          </div>
+          <div class="flex-grow-1">
+            <input type="tel" id="phone" name="phone" class="bg-transparent px-2 border-0 border-start border-1" required>
+          </div>
+        </div>
+      </div>  
+
+      <!-- Email -->
+      <div class="mb-3">
+        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+      </div>
+
+      <!-- Message -->
+      <div class="mb-3">
+        <textarea id="message" name="message" rows="5" class="form-control" placeholder="Message ..." required></textarea>
+      </div>
+
+      <!-- Bouton -->
+      <div class="text-end">
+        <button type="submit" class="w-100 btn btn-primary p-2">Submit Message</button>
+        <!-- Toast Bootstrap -->
+        <div class="position-fixed bottom-0 end-0 p-4" style="z-index: 11">
+          <div id="successToast" class="toast align-items-center me-md-5 mb-md-5 text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+              <div class="toast-body">
+                Merci, votre message a été envoyé !
+              </div>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
+    </form>
   </div>
+</div>
   <footer class="py-3 mt-4">
 
 <!-- Social Sidebar -->

@@ -74,7 +74,8 @@ document.body.style.overflow = 'hidden';
     phoneInput.value = `${format.code} ${formatted}`.trim();
   });
 
-    // SCROLL TO TOP
+
+  // SCROLL TO TOP
   const scrollArrow = document.getElementById('scroll-arrow');
 
 window.addEventListener('scroll', () => {
@@ -92,3 +93,38 @@ scrollArrow.addEventListener('click', () => {
 });
 
 
+
+
+
+
+
+// MESSAGE FORM
+const form = document.getElementById('contact-form');
+const toastEl = document.getElementById('successToast');
+const toast = new bootstrap.Toast(toastEl, { delay: 3000 }); // disparaît après 3s
+
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch('https://formspree.io/f/mldppoqz', {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      toast.show(); // affiche le toast
+    } else {
+      const data = await response.json();
+      alert(data.error || 'Une erreur est survenue.');
+    }
+
+  } catch (error) {
+    alert('Une erreur est survenue. Veuillez réessayer.');
+    console.error(error);
+  }
+});
