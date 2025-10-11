@@ -74,3 +74,21 @@ document.body.style.overflow = 'hidden';
     phoneInput.value = `${format.code} ${formatted}`.trim();
   });
 
+    // SCROLL TO TOP
+  const scrollArrow = document.getElementById('scroll-arrow');
+
+window.addEventListener('scroll', () => {
+  // Si on atteint presque la fin de la page
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 200) {
+    scrollArrow.classList.add('show');
+  } else {
+    scrollArrow.classList.remove('show');
+  }
+});
+
+// Quand on clique sur la flèche
+scrollArrow.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
