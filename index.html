@@ -1,11 +1,430 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <meta http-equiv="refresh" content="0; url=pages/accueil.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <script src="assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="icon" type="image/png" href="assets/images/logo_blanc.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+    <title>Portfolio</title>
 </head>
 <body>
-</body>
-</html>
+<header>
+  <nav class="navbar navbar-expand-lg header p-2 fixed-top">
+  <div class="container-fluid px-md-5 px-2 d-flex justify-content-between align-items-center">
+    <a class="navbar-brand" href="#home">
+      <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="45" height="45">
+        <g transform="translate(0,1024) scale(0.1,-0.1)" fill="#0e54b1" stroke-width="8">
+          <path d="M590 5528 l0 -2873 25 -100 c63 -258 186 -441 405 -606 69 -52 242 -146 281 -153 13 -3 24 -5 24 -6 0 -1 7 -3 15 -5 8 -2 38 -10 65 -19 45 -14 286 -16 2308 -16 l2257 0 0 740 0 740 -1875 0 -1875 0 0 2585 0 2585 -815 0 -815 0 0 -2872z"/>
+          <path d="M4340 6375 c0 -1343 3 -2025 10 -2025 6 0 10 4 10 9 0 5 6 16 13 23 7 7 35 42 62 78 50 66 123 158 153 195 9 11 29 37 44 57 15 21 34 45 42 55 8 10 51 65 96 123 139 182 194 252 243 314 26 34 68 88 94 121 26 33 70 89 98 125 80 102 526 675 595 765 14 18 51 65 82 106 l57 74 3 1003 3 1002 -802 0 -803 0 0 -2025z"/>
+          <path d="M8190 8374 c-103 -35 -228 -107 -292 -168 -29 -28 -88 -96 -130 -151 -43 -55 -120 -154 -171 -220 -196 -253 -457 -592 -564 -735 -31 -41 -60 -77 -63 -80 -4 -3 -21 -25 -38 -50 -18 -25 -47 -64 -65 -86 -17 -23 -68 -88 -111 -145 -119 -156 -140 -182 -151 -195 -5 -6 -20 -24 -32 -40 -87 -115 -132 -173 -309 -400 -55 -71 -118 -151 -138 -179 -49 -64 -77 -100 -151 -194 -33 -42 -78 -101 -100 -131 -22 -30 -42 -57 -45 -60 -3 -3 -35 -43 -70 -90 -81 -106 -81 -106 -125 -159 -65 -80 -76 -49 105 -291 10 -14 47 -63 81 -110 35 -47 66 -87 69 -90 3 -3 40 -52 83 -110 43 -58 84 -112 90 -120 14 -18 84 -112 113 -151 41 -56 500 -665 511 -679 7 -8 30 -38 50 -66 70 -95 217 -289 223 -294 3 -3 17 -21 30 -40 14 -19 56 -76 95 -125 38 -50 79 -103 90 -119 11 -15 63 -84 115 -153 52 -68 111 -147 130 -173 52 -71 304 -404 310 -410 3 -3 73 -95 155 -205 82 -110 152 -202 155 -205 3 -3 38 -49 78 -103 l72 -97 955 0 c525 0 955 3 955 6 0 4 -25 38 -55 78 -131 171 -148 192 -165 216 -10 14 -114 153 -232 308 -117 156 -242 323 -278 372 -86 115 -128 172 -143 190 -7 8 -45 60 -86 115 -41 55 -94 125 -117 155 -22 30 -64 87 -93 125 -28 39 -57 77 -64 85 -7 9 -106 141 -222 295 -115 154 -215 287 -222 295 -6 8 -62 83 -124 165 -534 711 -715 950 -721 953 -5 2 -8 10 -8 18 0 8 -4 14 -8 14 -5 0 -18 17 -29 38 l-21 37 21 26 c12 14 33 41 47 59 14 19 43 57 65 85 22 27 53 68 70 90 16 21 36 47 45 56 8 9 56 69 105 134 138 179 363 467 385 493 10 13 29 37 42 55 19 28 73 97 127 162 9 11 42 54 73 95 31 41 110 143 175 226 190 243 383 491 448 575 103 133 147 190 228 294 44 55 104 134 135 175 31 41 59 77 62 80 8 7 267 341 369 475 21 28 41 62 45 78 l6 27 -847 0 -848 -1 -75 -25z"/>
+        </g>
+      </svg>
+    </a>
+
+    <!-- bouton toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="45" height="45">
+          <g transform="translate(0,1024) scale(0.1,-0.1)" fill="#0e54b1" stroke-width="8">
+            <path d="M590 5528 l0 -2873 25 -100 c63 -258 186 -441 405 -606 69 -52 242 -146 281 -153 13 -3 24 -5 24 -6 0 -1 7 -3 15 -5 8 -2 38 -10 65 -19 45 -14 286 -16 2308 -16 l2257 0 0 740 0 740 -1875 0 -1875 0 0 2585 0 2585 -815 0 -815 0 0 -2872z"/>
+            <path d="M4340 6375 c0 -1343 3 -2025 10 -2025 6 0 10 4 10 9 0 5 6 16 13 23 7 7 35 42 62 78 50 66 123 158 153 195 9 11 29 37 44 57 15 21 34 45 42 55 8 10 51 65 96 123 139 182 194 252 243 314 26 34 68 88 94 121 26 33 70 89 98 125 80 102 526 675 595 765 14 18 51 65 82 106 l57 74 3 1003 3 1002 -802 0 -803 0 0 -2025z"/>
+            <path d="M8190 8374 c-103 -35 -228 -107 -292 -168 -29 -28 -88 -96 -130 -151 -43 -55 -120 -154 -171 -220 -196 -253 -457 -592 -564 -735 -31 -41 -60 -77 -63 -80 -4 -3 -21 -25 -38 -50 -18 -25 -47 -64 -65 -86 -17 -23 -68 -88 -111 -145 -119 -156 -140 -182 -151 -195 -5 -6 -20 -24 -32 -40 -87 -115 -132 -173 -309 -400 -55 -71 -118 -151 -138 -179 -49 -64 -77 -100 -151 -194 -33 -42 -78 -101 -100 -131 -22 -30 -42 -57 -45 -60 -3 -3 -35 -43 -70 -90 -81 -106 -81 -106 -125 -159 -65 -80 -76 -49 105 -291 10 -14 47 -63 81 -110 35 -47 66 -87 69 -90 3 -3 40 -52 83 -110 43 -58 84 -112 90 -120 14 -18 84 -112 113 -151 41 -56 500 -665 511 -679 7 -8 30 -38 50 -66 70 -95 217 -289 223 -294 3 -3 17 -21 30 -40 14 -19 56 -76 95 -125 38 -50 79 -103 90 -119 11 -15 63 -84 115 -153 52 -68 111 -147 130 -173 52 -71 304 -404 310 -410 3 -3 73 -95 155 -205 82 -110 152 -202 155 -205 3 -3 38 -49 78 -103 l72 -97 955 0 c525 0 955 3 955 6 0 4 -25 38 -55 78 -131 171 -148 192 -165 216 -10 14 -114 153 -232 308 -117 156 -242 323 -278 372 -86 115 -128 172 -143 190 -7 8 -45 60 -86 115 -41 55 -94 125 -117 155 -22 30 -64 87 -93 125 -28 39 -57 77 -64 85 -7 9 -106 141 -222 295 -115 154 -215 287 -222 295 -6 8 -62 83 -124 165 -534 711 -715 950 -721 953 -5 2 -8 10 -8 18 0 8 -4 14 -8 14 -5 0 -18 17 -29 38 l-21 37 21 26 c12 14 33 41 47 59 14 19 43 57 65 85 22 27 53 68 70 90 16 21 36 47 45 56 8 9 56 69 105 134 138 179 363 467 385 493 10 13 29 37 42 55 19 28 73 97 127 162 9 11 42 54 73 95 31 41 110 143 175 226 190 243 383 491 448 575 103 133 147 190 228 294 44 55 104 134 135 175 31 41 59 77 62 80 8 7 267 341 369 475 21 28 41 62 45 78 l6 27 -847 0 -848 -1 -75 -25z"/>
+          </g>
+        </svg>        
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav gap-3">
+          <li onclick="navClicked(this)" class="nav-item active">
+            <a class="nav-link d-flex align-items-center gap-2" href="#home"><i class="d-md-none d-block bi bi-house-fill"></i><span>Home</span></a>
+          </li>
+          <li onclick="navClicked(this)" class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2" href="#experience"><i class="d-md-none d-block bi bi-briefcase-fill"></i><span>Experience</span></a>
+          </li>
+          <li onclick="navClicked(this)" class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2" href="#project"><i class="d-md-none d-block bi bi-kanban-fill"></i><span>Project</span></a>
+          </li>
+          <li onclick="navClicked(this)" class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2" href="#skill"><i class="d-md-none d-block bi bi-tools"></i><span>Skill</span></a>
+          </li>
+          <li onclick="navClicked(this)" class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2" href="#service"><i class="d-md-none d-block bi bi-gear-fill"></i><span>Service</span></a>
+          </li>
+          <li onclick="navClicked(this)" class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2" href="#contact"><i class="d-md-none d-block bi bi-envelope-fill"></i><span>Contact</span></a>
+          </li>
+          <li onclick="navClicked(this)" class="nav-item d-md-none">
+            <a class="nav-link d-flex align-items-center gap-2" href="#"><i class="d-md-none d-block bi bi-file-earmark-text-fill"></i><span>CV</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a class="nav-link md-cv d-none d-md-block" href="#">CV</a>
+  </div>
+</nav>
+
+
+</header>
+<main>
+  <div id="intro-loader" style="display:flex;justify-content:center;align-items:center;height:100vh;background:#fff;">
+  <svg id="logo-svg" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" >
+    <g transform="translate(1,1024) scale(0.1,-0.1)" fill="none" stroke-width="8">
+      <path class="logo-path" d="M590 5528 l0 -2873 25 -100 c63 -258 186 -441 405 -606 69 -52 242 -146 281 -153 13 -3 24 -5 24 -6 0 -1 7 -3 15 -5 8 -2 38 -10 65 -19 45 -14 286 -16 2308 -16 l2257 0 0 740 0 740 -1875 0 -1875 0 0 2585 0 2585 -815 0 -815 0 0 -2872z"/>
+      <path class="logo-path" d="M4340 6375 c0 -1343 3 -2025 10 -2025 6 0 10 4 10 9 0 5 6 16 13 23 7 7 35 42 62 78 50 66 123 158 153 195 9 11 29 37 44 57 15 21 34 45 42 55 8 10 51 65 96 123 139 182 194 252 243 314 26 34 68 88 94 121 26 33 70 89 98 125 80 102 526 675 595 765 14 18 51 65 82 106 l57 74 3 1003 3 1002 -802 0 -803 0 0 -2025z"/>
+      <path class="logo-path" d="M8190 8374 c-103 -35 -228 -107 -292 -168 -29 -28 -88 -96 -130 -151 -43 -55 -120 -154 -171 -220 -196 -253 -457 -592 -564 -735 -31 -41 -60 -77 -63 -80 -4 -3 -21 -25 -38 -50 -18 -25 -47 -64 -65 -86 -17 -23 -68 -88 -111 -145 -119 -156 -140 -182 -151 -195 -5 -6 -20 -24 -32 -40 -87 -115 -132 -173 -309 -400 -55 -71 -118 -151 -138 -179 -49 -64 -77 -100 -151 -194 -33 -42 -78 -101 -100 -131 -22 -30 -42 -57 -45 -60 -3 -3 -35 -43 -70 -90 -81 -106 -81 -106 -125 -159 -65 -80 -76 -49 105 -291 10 -14 47 -63 81 -110 35 -47 66 -87 69 -90 3 -3 40 -52 83 -110 43 -58 84 -112 90 -120 14 -18 84 -112 113 -151 41 -56 500 -665 511 -679 7 -8 30 -38 50 -66 70 -95 217 -289 223 -294 3 -3 17 -21 30 -40 14 -19 56 -76 95 -125 38 -50 79 -103 90 -119 11 -15 63 -84 115 -153 52 -68 111 -147 130 -173 52 -71 304 -404 310 -410 3 -3 73 -95 155 -205 82 -110 152 -202 155 -205 3 -3 38 -49 78 -103 l72 -97 955 0 c525 0 955 3 955 6 0 4 -25 38 -55 78 -131 171 -148 192 -165 216 -10 14 -114 153 -232 308 -117 156 -242 323 -278 372 -86 115 -128 172 -143 190 -7 8 -45 60 -86 115 -41 55 -94 125 -117 155 -22 30 -64 87 -93 125 -28 39 -57 77 -64 85 -7 9 -106 141 -222 295 -115 154 -215 287 -222 295 -6 8 -62 83 -124 165 -534 711 -715 950 -721 953 -5 2 -8 10 -8 18 0 8 -4 14 -8 14 -5 0 -18 17 -29 38 l-21 37 21 26 c12 14 33 41 47 59 14 19 43 57 65 85 22 27 53 68 70 90 16 21 36 47 45 56 8 9 56 69 105 134 138 179 363 467 385 493 10 13 29 37 42 55 19 28 73 97 127 162 9 11 42 54 73 95 31 41 110 143 175 226 190 243 383 491 448 575 103 133 147 190 228 294 44 55 104 134 135 175 31 41 59 77 62 80 8 7 267 341 369 475 21 28 41 62 45 78 l6 27 -847 0 -848 -1 -75 -25z"/>
+    </g>
+  </svg>
+</div>
+<!-- Contenu principal du site -->
+<div id="main-content" style="display: none;">
+  <!-- ton site ici -->
+</div>
+
+<!-- section 1 -->
+<section class="container " id="home">
+    <div class="section-contains d-flex flex-column justify-content-center">
+        <div class="d-flex flex-wrap flex-column-reverse flex-md-row justify-content-around align-items-center gap-md-2">
+            <div class="left container">
+                <p class="fs-5 font-special color-blue mb-3 mt-3 mt-md-0">Hi , my name is </p>
+                <h1 class="fw-bolder display-3 name mb-3">Lorick TSARAZAKA</h1>
+                <h2 class="fw-bolder display-5 sub-title">I build things for the web</h2>
+                <p class="fs-5 text-secondary col-md-8 font-sans">Above all, I am passionate about web development. What I enjoy most in development is when challenges arise, because they push me to go beyond my limits.</p>
+                <div class="mt-5 d-flex gap-4 align-items-center">
+                    <a class="btn-fill-blue px-4 py-2" href="#contact">Contact me</a>
+                    <a class="btn-blue d-flex align-items-center gap-2" href="#project">See my work</a>
+                </div>
+            </div>
+            <div class="right">
+                <img type="button" data-bs-toggle="modal" data-bs-target="#photoModal" src="assets/images/photo.png">
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/photo.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- section 2 -->
+<section class="container" id="experience">
+  <p>EXPERIENCE</p>
+</section>
+
+<!-- section 3 -->
+<section class="container" id="project">
+    PROJECT
+</section>
+
+<!-- section 4 -->
+<section class="container d-flex flex-column justify-content-center" id="skill">
+  <div class="d-flex flex-column justify-content-center flex-grow-1 pb-3">
+    <div class="d-flex flex-column justify-content-center align-items-center text-center mb-5">
+      <p class="fs-5 font-special color-blue mb-2">My Skills</p>
+      <p class="text-muted fs-5 mt-2 col-md-8">
+        I build scalable and user-friendly web applications using modern technologies — from front-end to back-end.
+      </p>
+    </div>
+
+    <div class="row gap-5 container align-items-strech justify-content-center g-4">
+<!-- FRONTEND -->
+<div class="col-md-5">
+  <h4 class="fw-bold mb-3 text-uppercase color-blue">Frontend</h4>
+
+  <div class="mb-3 d-flex align-items-center gap-1">
+    <i class="devicon-html5-plain fs-2 me-2 text-danger"></i>
+    <div class="flex-grow-1 d-flex flex-column justify-content-start">
+      <label>HTML / CSS</label>
+      <div class="d-flex gap-2 align-items-center">
+        <div class="progress"><div class="progress-bar" data-width="60"></div></div>
+        <strong>60%</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-3 d-flex align-items-center gap-1">
+    <i class="devicon-javascript-plain fs-2 me-2 text-warning"></i>
+    <div class="flex-grow-1 d-flex flex-column justify-content-start">
+      <label>JavaScript</label>
+      <div class="d-flex gap-2 align-items-center">
+        <div class="progress"><div class="progress-bar" data-width="10"></div></div>
+        <strong>10%</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-3 d-flex align-items-center gap-1">
+    <i class="devicon-bootstrap-plain fs-2 me-2" style="color:#7952b3"></i>
+    <div class="flex-grow-1 d-flex flex-column justify-content-start">
+      <label>Bootstrap</label>
+      <div class="d-flex gap-2 align-items-center">
+        <div class="progress"><div class="progress-bar" data-width="60"></div></div>
+        <strong>60%</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BACKEND -->
+<div class="col-md-5">
+  <h4 class="fw-bold mb-3 text-uppercase color-blue">Backend</h4>
+
+  <div class="mb-3 d-flex align-items-center gap-1">
+    <i class="devicon-php-plain fs-2 me-2 text-primary"></i>
+    <div class="flex-grow-1 d-flex flex-column justify-content-start">
+      <label>PHP</label>
+      <div class="d-flex gap-2 align-items-center">
+        <div class="progress"><div class="progress-bar" data-width="35"></div></div>
+        <strong>35%</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-3 d-flex align-items-center gap-1">
+    <i class="devicon-java-plain fs-2 me-2 text-danger"></i>
+    <div class="flex-grow-1 d-flex flex-column justify-content-start">
+      <label>Java / JSP</label>
+      <div class="d-flex gap-2 align-items-center">
+        <div class="progress"><div class="progress-bar" data-width="50"></div></div>
+        <strong>50%</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DATABASE -->
+<div class="col-md-5 mt-4">
+  <h4 class="fw-bold mb-3 text-uppercase color-blue">Database</h4>
+
+  <div class="mb-3 d-flex align-items-center gap-1">
+    <i class="devicon-mysql-plain fs-2 me-2 text-info"></i>
+    <div class="flex-grow-1 d-flex flex-column justify-content-start">
+      <label>MySQL</label>
+      <div class="d-flex gap-2 align-items-center">
+        <div class="progress"><div class="progress-bar" data-width="40"></div></div>
+        <strong>40%</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-3 d-flex align-items-center gap-1">
+    <i class="devicon-oracle-original fs-2 me-2 text-danger"></i>
+    <div class="flex-grow-1 d-flex flex-column justify-content-start">
+      <label>Oracle</label>
+      <div class="d-flex gap-2 align-items-center">
+        <div class="progress"><div class="progress-bar" data-width="1"></div></div>
+        <strong>1%</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOOLS -->
+<div class="col-md-5 mt-4">
+  <h4 class="fw-bold mb-3 text-uppercase color-blue">Tools & Others</h4>
+
+  <div class="mb-3 d-flex align-items-center gap-1">
+    <i class="devicon-github-original fs-2 me-2 text-dark"></i>
+    <div class="flex-grow-1 d-flex flex-column justify-content-start">
+      <label>Git / GitHub</label>
+      <div class="d-flex gap-2 align-items-center">
+        <div class="progress"><div class="progress-bar" data-width="10"></div></div>
+        <strong>10%</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-3 d-flex align-items-center gap-1">
+    <i class="devicon-docker-plain fs-2 me-2 text-primary"></i>
+    <div class="flex-grow-1 d-flex flex-column justify-content-start">
+      <label>Docker / CI-CD</label>
+      <div class="d-flex gap-2 align-items-center">
+        <div class="progress"><div class="progress-bar" data-width="10"></div></div>
+        <strong>10%</strong>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section 5 -->
+<section class="container" id="service">
+    SERVICE
+</section>
+
+<!-- section 6 -->
+<section class="container font-sans" id="contact">
+<div class="d-flex flex-column justify-content-center flex-grow-1 pb-3">
+    <div class="d-flex flex-column justify-content-center align-items-center text-center mb-2 mb-md-5">
+      <p class="fs-5 font-special color-blue mb-3 mt-3 mt-md-0">What's next?</p>
+      <h2 class="fw-bolder display-4 sub-title">Get in Touch</h2>
+      <p class="text-muted fs-md-5 mt-2 col-md-6">Feel free to contact me for any questions, ideas, or potential collaboration opportunities. I’m always happy to connect, share insights, and explore ways we might work together.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <div class="p-md-4 bg-white h-100 contact-list">
+          <!-- Phone -->
+          <a href="tel:+261347987093" class="text-decoration-none text-dark">
+            <div class="contact-item d-flex align-items-start gap-3 flex-row mb-3">
+              <span class="icon-contact">
+                <i class="bi bi-telephone-fill"></i>
+              </span>
+              <div class="d-flex flex-column">
+                <strong>Phone</strong>
+                  +261 34 79 870 93
+              </div>
+            </div>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:lorick.tsarazaka.lk@gmail.com" class="text-decoration-none text-dark">
+            <div class="contact-item d-flex align-items-start gap-3 flex-row mb-3">
+              <span class="icon-contact">
+                <i class="bi bi-envelope-fill"></i>
+              </span>
+              <div class="d-flex flex-column">
+                <strong>Email</strong>
+                  lorick.tsarazaka.lk@gmail.com
+              </div>
+            </div>
+          </a>
+
+          <!-- Address -->
+          <a href="https://www.google.com/maps?q=Andoharanofotsy,+Antananarivo,+Madagascar" target="_blank" class="text-decoration-none text-dark">
+            <div class="contact-item d-flex align-items-start gap-3 flex-row">
+              <span class="icon-contact">
+                <i class="bi bi-geo-alt-fill"></i>
+              </span>
+              <div class="d-flex flex-column">
+                <strong>Address</strong>
+                  Andoharanofotsy, Antananarivo, Madagascar
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+<!-- Contact Form -->
+<div class="col-lg-8">
+  <div class="px-md-4 bg-white">
+    <!-- Formulaire Formspree -->
+    <form id="contact-form">
+      <div class="d-flex flex-wrap">
+        <!-- Nom -->
+        <div class="col-md-6 col-12 mb-3 me-md-3">
+          <input type="text" id="name" name="name" class="p-2 form-control" placeholder="Name" required>
+        </div>
+
+        <!-- Téléphone avec pays -->
+        <div class="d-flex align-items-center flex-grow-1 mb-3 tel-form">
+          <div class="col-2">
+            <select id="country" name="country" class="bg-transparent border-0 ps-3" onchange="updatePattern()">
+              <option value="MG">🇲🇬</option>
+              <option value="FR">🇫🇷</option>
+              <option value="US">🇺🇸</option>
+            </select>
+          </div>
+          <div class="flex-grow-1">
+            <input type="tel" id="phone" name="phone" class="bg-transparent px-2 border-0 border-start border-1" required>
+          </div>
+        </div>
+      </div>  
+
+      <!-- Email -->
+      <div class="mb-3">
+        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+      </div>
+
+      <!-- Message -->
+      <div class="mb-3">
+        <textarea id="message" name="message" rows="5" class="form-control" placeholder="Message ..." required></textarea>
+      </div>
+
+      <!-- Bouton -->
+      <div class="text-end">
+        <button type="submit" class="w-100 btn btn-primary p-2">Submit Message</button>
+        <!-- Toast Bootstrap -->
+        <div class="position-fixed bottom-0 end-0 p-4" style="z-index: 11">
+          <div id="successToast" class="toast align-items-center me-md-5 mb-md-5 text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+              <div class="toast-body">
+                Merci, votre message a été envoyé !
+              </div>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+  <footer class="py-3 mt-4">
+
+<!-- Social Sidebar -->
+<div class="social-footer d-flex d-md-none justify-content-center gap-5 mt-1 mb-2">
+  <a href="https://github.com/lorick-tsarazaka" target="_blank"><i class="bi bi-github"></i></a>
+  <a href="https://www.instagram.com/__loricktsila" target="_blank"><i class="bi bi-instagram"></i></a>
+  <a href="https://x.com/loricktsarazaka" target="_blank"><i class="bi bi-twitter-x"></i></a>
+  <a href="https://www.linkedin.com/in/lorick-tsarazaka-19704534b" target="_blank"><i class="bi bi-linkedin"></i></a>
+  <a href="https://wa.me/261347987093" target="_blank"><i class="bi bi-whatsapp"></i></a>
+</div>
+
+<div>
+    <p class="copy pb-1 m-0 text-center">Designed & Built by <span class="fw-bolder">Lorick TSARAZAKA</span></p>
+    <p class="copy p-0 m-0 text-center">&copy; 2025 . All Rights Reserved.</p>
+</div>
+  </footer>
+    <!-- Flèche -->
+<div id="scroll-arrow">
+<i class="bi bi-arrow-up-short"></i>
+</div>
+
+</section>
+
+</main>
+<div>
+  <!-- Social Sidebar -->
+<div class="ps-3 social-sidebar d-none d-md-flex gap-2 flex-column align-items-center">
+  <a href="https://github.com/lorick-tsarazaka" target="_blank"><i class="bi bi-github"></i></a>
+  <a href="https://www.instagram.com/__loricktsila" target="_blank"><i class="bi bi-instagram"></i></a>
+  <a href="https://x.com/loricktsarazaka" target="_blank"><i class="bi bi-twitter-x"></i></a>
+  <a href="https://www.linkedin.com/in/lorick-tsarazaka-19704534b" target="_blank"><i class="bi bi-linkedin"></i></a>
+  <a href="https://wa.me/261347987093" target="_blank"><i class="bi bi-whatsapp"></i></a>
+  <div class="vertical-line"></div>
+</div>
+
+<!-- Email Sidebar -->
+<div class="pe-3 email-sidebar d-none d-md-flex flex-column align-items-center">
+  <a href="mailto:lorick.tsarazaka.lk@gmail.com" class="font-special">lorick.tsarazaka.lk@gmail.com</a>
+  <div class="vertical-line"></div>
+</div>
+
+</div>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/accueil.js"></script>
+  </body>
+  </html>
 
