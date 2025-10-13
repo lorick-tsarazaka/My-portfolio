@@ -607,6 +607,73 @@ footer{
 }
 
 
+/* SERVICE */
+#service .card i {
+    color: #0e54b1; 
+}
+
+#service .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.color-blue {
+    color: #0e54b1;
+}
+
+/* Titre et couleur principale */
+.color-blue {
+  color: #0e54b1;
+}
+
+/* --- ICON STYLE --- */
+#service .card i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #fff !important;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.icon-frontend {
+  background: linear-gradient(135deg, #b9f7ff, #0026ff); /* bleu vif */
+}
+.icon-backend {
+  background: linear-gradient(135deg, #ffd1b7, #ff0000); /* rouge vif */
+}
+.icon-fullstack {
+  background: linear-gradient(135deg, #dcffb3, #00ad1d); /* vert vif */
+}
+.icon-mobile {
+  background: linear-gradient(135deg, #fff7ae, #d4ad00); /* orange vif */
+}
+.icon-design {
+  background: linear-gradient(135deg, #dfc0ff, #a200ff); /* violet vif */
+}
+.icon-database {
+  background: linear-gradient(135deg, #97eaff, #0057da); /* cyan vif */
+}
+
+/* --- CARD STYLE --- */
+#service .card {
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#service .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Texte centré et propre */
+#service p {
+  line-height: 1.6;
+}
 
 
 
