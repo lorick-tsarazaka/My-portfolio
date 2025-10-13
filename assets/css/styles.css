@@ -640,22 +640,22 @@ footer{
 }
 
 .icon-frontend {
-  background: linear-gradient(135deg, #b9f7ff, #0026ff); /* bleu vif */
+  background: linear-gradient(135deg, #00ffd5, #6100cf); /* bleu vif */
 }
 .icon-backend {
-  background: linear-gradient(135deg, #ffd1b7, #ff0000); /* rouge vif */
+  background: linear-gradient(135deg, #ffd1b7, #e40000); /* rouge vif */
 }
 .icon-fullstack {
-  background: linear-gradient(135deg, #dcffb3, #00ad1d); /* vert vif */
+  background: linear-gradient(135deg, #b9ee7c, #01961a); /* vert vif */
 }
 .icon-mobile {
-  background: linear-gradient(135deg, #fff7ae, #d4ad00); /* orange vif */
+  background: linear-gradient(135deg, #f3f587, #cea800); /* orange vif */
 }
 .icon-design {
-  background: linear-gradient(135deg, #dfc0ff, #a200ff); /* violet vif */
+  background: linear-gradient(135deg, #dec3fa, #7e02c5); /* violet vif */
 }
 .icon-database {
-  background: linear-gradient(135deg, #97eaff, #0057da); /* cyan vif */
+  background: linear-gradient(135deg, #97eaff, #0053cf); /* cyan vif */
 }
 
 /* --- CARD STYLE --- */
